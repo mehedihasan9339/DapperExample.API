@@ -1,0 +1,192 @@
+/* Set the background and font for the whole page */
+body {
+    background: linear-gradient(to bottom, #f7f7f7, #ffffff);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+/* Customize the header */
+.swagger-ui .topbar {
+    background: linear-gradient(to right, #4CAF50, #388E3C);  /* Green gradient */
+    border-bottom: 4px solid #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Modify the color of links in the header */
+.swagger-ui .topbar a {
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.swagger-ui .topbar a:hover {
+    text-decoration: underline;
+}
+
+/* Style the Swagger logo (make it stand out) */
+.swagger-ui .topbar .swagger-ui-logo {
+    display: none;  /* Hide default Swagger logo */
+}
+
+/* Create a more vibrant color for buttons */
+.swagger-ui .btn {
+    background: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.swagger-ui .btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);  /* Slight zoom effect */
+}
+
+.swagger-ui .btn:active {
+    background-color: #388E3C;
+}
+
+/* Customize the operation list and tags */
+.swagger-ui .opblock-tag.no-desc span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 5px 0;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 10px;
+}
+
+/* Add subtle shadows and hover effects for operation blocks */
+.swagger-ui .opblock {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+    margin: 15px 0;
+    transition: box-shadow 0.3s ease;
+    padding: 20px;
+}
+
+.swagger-ui .opblock:hover {
+    box-shadow: 0px 6px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Add hover effects to parameters */
+.swagger-ui .parameter__name {
+    color: #388E3C;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.swagger-ui .parameter__name:hover {
+    color: #2c6e2f;
+}
+
+/* Add a smooth transition when expanding operation blocks */
+.swagger-ui .opblock-summary {
+    transition: all 0.3s ease;
+}
+
+.swagger-ui .opblock-summary:hover {
+    background-color: #f7f7f7;
+    border-radius: 6px;
+}
+
+/* Change the background of success and error status codes */
+.swagger-ui .responses-inner .response__container .response__code {
+    background-color: #28a745; /* Green for success */
+    color: #fff;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.swagger-ui .responses-inner .response__container .response__code.error {
+    background-color: #dc3545; /* Red for error */
+    color: #fff;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.swagger-ui .responses-inner .response__container .response__code:hover {
+    opacity: 0.85;
+}
+
+/* Make the parameters and response tables cleaner */
+.swagger-ui .parameters-table, .swagger-ui .responses-table {
+    border-radius: 6px;
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.swagger-ui .parameters-table th, .swagger-ui .responses-table th {
+    background-color: #f0f0f0;
+    color: #555;
+    padding: 12px 16px;
+    font-weight: bold;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.swagger-ui .parameters-table td, .swagger-ui .responses-table td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Add some modern touch to the "Try it out" button */
+.swagger-ui .try-it-out {
+    background: #FF9800;  /* Orange for attention */
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.swagger-ui .try-it-out:hover {
+    background: #f57c00;
+    transform: scale(1.05);
+}
+
+/* Improve the API response formatting */
+.swagger-ui .responses-inner .response__container {
+    margin-bottom: 20px;
+}
+
+.swagger-ui .response__content {
+    background: #f7f7f7;
+    border-radius: 4px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    color: #444;
+}
+
+/* Add a smooth transition for expanding and collapsing details */
+.swagger-ui .opblock-summary {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.swagger-ui .opblock-summary:hover {
+    transform: scale(1.02);
+}
+
+/* Add spacing around Swagger UI */
+.swagger-ui .swagger-ui-wrap {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1000px;
+}

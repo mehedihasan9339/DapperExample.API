@@ -189,4 +189,10 @@ The API exposes the following endpoints:
 
 Here’s a quick overview of the project structure:
 
+![Project Structure](https://github.com/mehedihasan9339/DapperExample.API/blob/master/wwwroot/images/project-structure.png?raw=true)
 
+## Project Overview
+
+Here’s a screenshot showing the overview of the project:
+
+![Project Overview](https://github.com/mehedihasan9339/DapperExample.API/blob/master/wwwroot/images/project-overview.png?raw=true)

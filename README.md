@@ -10,6 +10,46 @@
 - **SQL Stored Procedures:** The application utilizes stored procedures for database operations, providing a robust and scalable approach to interact with the database.
 - **EF Core (for migrations):** Uses EF Core for managing database schema migrations and model mapping.
 
+## Why Use Dapper?
+
+Dapper is a lightweight, high-performance Object-Relational Mapper (ORM) for .NET. It's designed to be fast and efficient, making it a popular choice when working with databases. Here are some key reasons why you might choose Dapper for your project:
+
+### 1. **Performance**
+   Dapper is known for its high performance compared to traditional ORMs like Entity Framework. It uses raw SQL queries and maps the results to objects directly, reducing overhead and improving execution speed.
+
+### 2. **Simplicity and Flexibility**
+   Dapper provides a simple API for executing SQL queries and mapping the results to strongly-typed objects. It doesn't require complex configuration or setup, making it easy to use in smaller projects or when you need fine-grained control over your SQL.
+
+### 3. **Minimal Overhead**
+   Unlike heavier ORMs, Dapper adds minimal overhead to your queries. It doesn't track entity states or change tracking, making it more lightweight and suitable for high-performance applications.
+
+### 4. **Control Over SQL Queries**
+   Dapper gives developers full control over their SQL queries. While ORMs like Entity Framework abstract SQL generation, Dapper lets you write raw SQL queries, which is especially useful for complex queries or when you need fine-tuned performance optimization.
+
+### 5. **Support for Multiple Databases**
+   Dapper supports various database systems, including SQL Server, MySQL, PostgreSQL, SQLite, and more. This makes it a great choice for applications that need to work with different databases.
+
+### 6. **Easy Integration with Existing Code**
+   Dapper is easy to integrate into existing projects, especially if you already have complex or legacy SQL queries. It doesn’t require a complete rewrite of your data access code, making it ideal for projects that require incremental improvements.
+
+### 7. **Lightweight and Minimalist**
+   Dapper has a very small footprint, meaning it won't bloat your application. It’s simple, focused, and doesn’t impose unnecessary complexity, making it a great choice when you need a fast and efficient data access layer.
+
+### 8. **Active Community and Widely Used**
+   Dapper has a large and active community. It is well-maintained and widely adopted in production environments. Many developers use Dapper in real-world applications, which means it has been battle-tested and optimized over time.
+
+---
+
+### When to Use Dapper?
+Dapper is a great choice when you need:
+- High-performance data access with minimal overhead.
+- Fine-grained control over SQL queries.
+- Simplicity and ease of use without complex ORM features.
+- To integrate into an existing project with minimal changes.
+
+If your application doesn’t require advanced ORM features like change tracking, lazy loading, or automatic migrations, Dapper provides a simple and fast alternative to other ORMs like Entity Framework.
+
+
 ## Technologies Used
 
 - **ASP.NET Core 6/7**: Backend framework to build RESTful APIs.

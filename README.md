@@ -73,7 +73,7 @@ Follow these steps to get your development environment set up:
 Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/DapperExample.API.git
+git clone https://github.com/mehedihasan9339/DapperExample.API.git
 ```
 
 
@@ -88,7 +88,7 @@ Make sure to update your connection string in the `appsettings.json` file:
 ```json
 {
   "ConnectionStrings": {
-    "DefaultConnection": "Server=your_server;Database=your_database;User Id=your_user;Password=your_password;"
+    "DefaultConnection": "Server=Mehedi;Database=DapperExampleDb;Trusted_Connection=True;TrustServerCertificate=True;"
   }
 }
 ```
